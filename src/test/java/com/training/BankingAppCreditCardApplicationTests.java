@@ -9,7 +9,7 @@ class BankingAppCreditCardApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertTrue(true);
+		assertTrue(false);
 	}
 
 }
