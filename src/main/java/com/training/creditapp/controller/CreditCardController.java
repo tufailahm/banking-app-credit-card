@@ -20,6 +20,11 @@ public class CreditCardController {
 	@Autowired
 	RestTemplate restTemplate;
 	
+	@GetMapping("hello")
+		public String getHello() {
+				return "Hello Carol";
+	}
+	
 	@GetMapping("applyCreditCard/{customerId}")
 	@CircuitBreaker(name = "visitorServiceCircuitBreaker", fallbackMethod = "ofssFallbackmethod")
 	public ResponseEntity<String> applyCreditCard(
