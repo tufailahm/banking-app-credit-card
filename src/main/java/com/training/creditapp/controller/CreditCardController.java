@@ -25,6 +25,11 @@ public class CreditCardController {
 				return "Hello Carol";
 	}
 	
+	@GetMapping("goodmorning")
+	public String getGreetings() {
+			return "Hello Good morning";
+}
+	
 	@GetMapping("applyCreditCard/{customerId}")
 	@CircuitBreaker(name = "visitorServiceCircuitBreaker", fallbackMethod = "ofssFallbackmethod")
 	public ResponseEntity<String> applyCreditCard(
