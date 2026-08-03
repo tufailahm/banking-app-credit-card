@@ -25,8 +25,13 @@ public class CreditCardController {
 	public String getHello() {
 		return "Hello Carol";
 	}
+	
+	@GetMapping("getCustomer")
+	public String getCustomer() {
+		return "Hello Customer";
+	}
 
-	@GetMapping("hh")
+	@GetMapping("hh")	//localhost:7070/creditcards/hh
 	public String hh() {
 		return "Lunch break sponsered by Nikhil";
 	}
