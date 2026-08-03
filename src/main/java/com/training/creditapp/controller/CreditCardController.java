@@ -26,6 +26,11 @@ public class CreditCardController {
 		return "Hello Carol";
 	}
 
+	@GetMapping("hh")
+	public String hh() {
+		return "Lunch break sponsered by Nikhil";
+	}
+	
 	@GetMapping("goodmorning")
 	public String getGreetings() {
 		return "Hello Good morning";
